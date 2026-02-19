@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>FUCK NIGGGERS KKK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -34,6 +34,7 @@
       border: none;
       cursor: pointer;
       font-size: 16px;
+      margin-top: 20px;
     }
 
     button:hover {
@@ -46,27 +47,80 @@
       padding: 20px;
       margin-top: 40px;
     }
+
+    #newPageContent {
+      display: none;
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      width: 300px;
+      margin-right: 10px;
+    }
+
+    a.dynamicLink {
+      display: block;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #007aff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>end ur life</h1>
+  <h1>Welcome to bens rapehole</h1>
   <p>Built on pornhub</p>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>YO FUCKKK YOU</p>
-  
-  <h3>fuck you ben kill yourself nigger</h3>
+  <p>This website is live on the internet.</p>
+  <h3> Ben kill yourself nigger</h3>
 
-  <button onclick="window.location.href='rule34.xxx'">Click here nigga</button>
+  <button onclick="showNewPage()">Click here nigga</button>
+
+  <div id="newPageContent">
+    <h2>New Page</h2>
+    <p>where do u want to go faggot:</p>
+    <input type="text" id="linkInput" placeholder="https://example.com">
+    <button onclick="goToLink()">take me</button>
+    <a id="dynamicLink" class="dynamicLink" href="#" target="_blank">Your link will appear here</a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 porn hub award</p>
+  <p>© NIGGER</p>
 </footer>
 
+<script>
+  function showNewPage() {
+    document.getElementById('newPageContent').style.display = 'block';
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
+  function goToLink() {
+    var link = document.getElementById('linkInput').value;
+    if (link) {
+      var dynamicLink = document.getElementById('dynamicLink');
+      dynamicLink.href = link;
+      dynamicLink.textContent = "Click here to go to: " + link;
+      dynamicLink.style.color = "#007aff";
+      dynamicLink.style.display = "block";
+      dynamicLink.target = "_blank";
+    } else {
+      alert("enter a link sped nigga");
+    }
+  }
+</script>
+
 </body>
+</html>
+
 </html>
